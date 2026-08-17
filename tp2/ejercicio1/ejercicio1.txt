@@ -1,0 +1,37 @@
+a) Analice el funcionamiento del siguiente código. 
+¿Cuántos hilos de control participan en la ejecución?
+
+rta: 3, el main y sus dos hilos Cliente.juan y Cliente.ines
+
+b) ¿Cúal es la funcionalidad del método “uso” de Recurso?
+
+el Recurso.uso() invoca el .thread.getName() internamente y muestra el nombre del hilo que esta correidno. 
+
+c) Indique todas las salidas posibles.
+
+Soy Juan Lopez | ran at = [41.080935]
+en Recurso: SoyJuan Lopez | ran at = [41.096963]
+Soy InesGarcia | ran at = [41.080935]
+en Recurso: SoyInesGarcia | ran at = [41.096963]
+
+Soy Juan Lopez | ran at = [30.353317]
+Soy InesGarcia | ran at = [30.353317]
+en Recurso: SoyJuan Lopez | ran at = [30.369355]
+en Recurso: SoyInesGarcia | ran at = [30.369355]
+
+Soy InesGarcia | ran at = [36.230635]
+Soy Juan Lopez | ran at = [36.230635]
+en Recurso: SoyInesGarcia | ran at = [36.246659]
+en Recurso: SoyJuan Lopez | ran at = [36.246659]
+
+Soy Juan Lopez | ran at = [19.599798]
+Soy InesGarcia | ran at = [19.599798]
+en Recurso: SoyInesGarcia | ran at = [19.615314]
+en Recurso: SoyJuan Lopez | ran at = [19.615314]
+
+d) ¿Qué sucede si agrega la línea “unRecurso.uso()” al final del main?
+
+
+
+e) ¿Qué sucede si cambia el orden de las instrucciones “start()”?
+¿Tiene algún impacto en el resultado de la ejecución?
