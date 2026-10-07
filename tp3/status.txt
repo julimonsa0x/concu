@@ -1,0 +1,14 @@
+tp3: Seccion critica - sincronizacion
+
+ejercicio 1: CuentaBanco
+a) al correr el codigo normal, observaremos una inconsistencia en el saldo de jere y lucas
+esto es justamente la condicion de carrera y debemos sincronizar el metodo que involucre a
+la seccion critica la cual es CuentaBanco.retiroBancario()...
+
+b) se mejora primero, controlando que no sea negativo y segundo, con el synchronized para
+asegurar la seccion critica en el recurso compartido
+
+c) 
+
+
+ejercicio2: 

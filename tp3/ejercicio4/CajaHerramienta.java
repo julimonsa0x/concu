@@ -14,7 +14,6 @@ public class CajaHerramienta {
                     + ": usa la cuchara 5 segs.");
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
-                // cachai o cachai po 🗣️
             }
         }
     }
@@ -25,7 +24,6 @@ public class CajaHerramienta {
                     + ": usa la buscapolos 2 segs.");
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
-                // cachai o cachai po 🗣️
             }
         }
     }
@@ -36,7 +34,6 @@ public class CajaHerramienta {
                     + ": usa la Llave 3 segs.");
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
-                // cachai o cachai po 🗣️
             }
         }
     }
@@ -47,7 +44,6 @@ public class CajaHerramienta {
                     + ": usa la Nivel 5 segs.");
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
-                // cachai o cachai po 🗣️
             }
         }
     }

@@ -15,13 +15,13 @@ public class CuentaBanco2 {
         this.balance -= retiro;
     }*/
     
-    public boolean hacerRetiro (int cantidad) throws InterruptedException {
+    public synchronized boolean hacerRetiro (int cantidad) throws InterruptedException {
         boolean puedeRetirar = this.balance >= cantidad;
         
         if (puedeRetirar) {
             System.out.println(Thread.currentThread().getName() 
                 + " esta realizando un retiro de: " + cantidad);
-            Thread. sleep(1000);
+            Thread.sleep(250);
             this.balance -= cantidad;
             System.out.println(Thread.currentThread() .getName()
                 + ": Retiro realizado") ;
@@ -33,7 +33,7 @@ public class CuentaBanco2 {
                 + Thread.currentThread().getName());
             System.out.println("Su saldo actual es de: "
                 + this.balance);
-            Thread.sleep(1000) ;
+            Thread.sleep(250) ;
         }
         return puedeRetirar ;
     }

@@ -1,4 +1,4 @@
-package tp3.ejercicio7;
+package tp3.ejercicio9;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Auto implements Runnable {
@@ -51,7 +51,7 @@ public class Auto implements Runnable {
             tanqueActual += litrosFaltantes;
             System.out.println("[:D] Auto-" + patente + " llenó el tanque. Listo para seguir.");
         } else {
-            // forzamos salida loop
+            // forzamos salida loop y muere el hilo (status = stopped)...
             tanqueActual = 0;
         }
     }
